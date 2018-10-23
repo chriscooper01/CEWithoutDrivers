@@ -35,6 +35,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Helpers\SDFHelper.cs" />
+    <Compile Include="Models\Helpers\SQLCEVersionHelper.cs" />
+    <Compile Include="Models\Tables\UserTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amd64\sqlceca40.dll" />
+    <Content Include="amd64\sqlcecompact40.dll" />
+    <Content Include="amd64\sqlceer40EN.dll" />
+    <Content Include="amd64\sqlceme40.dll" />
+    <Content Include="amd64\sqlceoledb40.dll" />
+    <Content Include="amd64\sqlceqp40.dll" />
+    <Content Include="amd64\sqlcese40.dll" />
+    <Content Include="System.Data.SqlServerCe.dll" />
+    <Content Include="x86\sqlceca40.dll" />
+    <Content Include="x86\sqlcecompact40.dll" />
+    <Content Include="x86\sqlceer40EN.dll" />
+    <Content Include="x86\sqlceme40.dll" />
+    <Content Include="x86\sqlceoledb40.dll" />
+    <Content Include="x86\sqlceqp40.dll" />
+    <Content Include="x86\sqlcese40.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
